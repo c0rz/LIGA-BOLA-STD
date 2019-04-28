@@ -25,4 +25,9 @@ struct ListParent{
     addressParent last;
 };
 
+void createListClub(ListParent &L);
+addressParent allocateClub(club x);
+void insertLastClub(ListParent &L, addressParent P);
+void printInfoClub(ListParent L);
+
 #endif // PARENT_H_INCLUDED
