@@ -9,13 +9,21 @@ club create_data_club()
     {
         cin.clear();
         d.id_club = NULL;
-        cout<<"  ID Lagu yang anda inputkan bukan integer. Tekan 'Enter' untuk melanjutkan...";
+        cout<<"  ID Club yang anda inputkan bukan integer. Tekan 'Enter' untuk melanjutkan...";
     }
     else
     {
         cout<<"  Nama Club         : ";
-        cin>> d.nama_club;
+        cin.ignore();
+        getline(cin, d.nama_club);
         d.skor_club = 0;
     }
     return d;
+}
+
+void lihatClub(club c)
+{
+    cout<<"  ID Club        : " <<c.id_club<<endl;
+    cout<<"  Nama Club  : " <<c.nama_club<<endl;
+    cout<<"  Point Skor    : " <<c.skor_club<<endl;
 }

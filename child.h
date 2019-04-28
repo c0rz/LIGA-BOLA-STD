@@ -21,4 +21,11 @@ struct ListChild{
     addressChild first;
 };
 
+void createListGenre(ListChild &L);
+addressChild allocatePemain(pemain x);
+void insertFirstPemain(ListChild &L, addressChild P);
+void insertLastPemain(ListChild &L, addressChild P);
+void insertAfterPemain(ListChild &L, addressChild Prec, addressChild P);
+void printInfoPemain(ListChild L);
+
 #endif // CHILD_H_INCLUDED

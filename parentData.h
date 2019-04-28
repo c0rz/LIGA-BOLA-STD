@@ -13,5 +13,6 @@ struct club{
 };
 
 club create_data_club();
+void lihatClub(club c);
 
 #endif // PARENTDATA_H_INCLUDED

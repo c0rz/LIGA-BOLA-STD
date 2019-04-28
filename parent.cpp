@@ -41,10 +41,15 @@ void printInfoClub(ListParent L){
     if((first(L) != NULL) && (last(L) != NULL)){
         addressParent P = first(L);
         while(P != NULL){
-            cout << info(P).nama_club;
+            cout << "  ---------------  List Club  ---------------" << endl;
+            lihatClub(info(P));
             cout<<endl;
             P = next(P);
         }
+    }
+    else
+    {
+        cout << "Silahkan inputkan club anda terlebih dahulu, karena data kosong..." << endl;
     }
 }
 

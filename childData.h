@@ -12,4 +12,7 @@ struct pemain{
     int total_gol;
 };
 
+pemain create_data_pemain();
+void lihatPemain(pemain p);
+
 #endif // CHILDDATA_H_INCLUDED
