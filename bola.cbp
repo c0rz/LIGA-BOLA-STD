@@ -35,10 +35,13 @@
 		<Unit filename="child.cpp" />
 		<Unit filename="child.h" />
 		<Unit filename="childData.h" />
+		<Unit filename="isiChild.cpp" />
+		<Unit filename="isiParent.cpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="parent.cpp" />
 		<Unit filename="parent.h" />
 		<Unit filename="parentData.h" />
+		<Unit filename="relasiList.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
