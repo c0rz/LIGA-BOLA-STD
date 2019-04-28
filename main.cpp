@@ -18,6 +18,7 @@ int main()
     int menu;
 
     createListClub(listClub);
+    createListPemain(listPemain);
 
     while(true)
     {

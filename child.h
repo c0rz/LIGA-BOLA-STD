@@ -21,7 +21,7 @@ struct ListChild{
     addressChild first;
 };
 
-void createListGenre(ListChild &L);
+void createListPemain(ListChild &L);
 addressChild allocatePemain(pemain x);
 void insertFirstPemain(ListChild &L, addressChild P);
 void insertLastPemain(ListChild &L, addressChild P);

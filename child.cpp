@@ -1,7 +1,7 @@
 #include "child.h"
 #include "childData.h"
 
-void createListGenre(ListChild &L){
+void createListPemain(ListChild &L){
     first(L) = NULL;
 }
 
