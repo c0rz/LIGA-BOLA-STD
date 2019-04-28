@@ -12,4 +12,6 @@ struct club{
     int skor_club;
 };
 
+club create_data_club();
+
 #endif // PARENTDATA_H_INCLUDED

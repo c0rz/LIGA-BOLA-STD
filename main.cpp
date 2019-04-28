@@ -13,10 +13,9 @@ int main()
     addressParent addP;
 
     createListClub(listClub);
-    c.id_club = 1;
-    c.nama_club = "alfan";
-    c.skor_club = 0;
-    addP = allocateClub(c);
+
+    c = create_data_club();
+
     insertLastClub(listClub, addP);
     printInfoClub(listClub);
 

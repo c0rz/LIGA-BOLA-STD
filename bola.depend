@@ -1,7 +1,7 @@
 # depslib dependency file v1.0
 1556460756 source:d:\program\bahasa c++\tubes_std\liga-bola-std\child.cpp
 
-1556462853 source:d:\program\bahasa c++\tubes_std\liga-bola-std\main.cpp
+1556464582 source:d:\program\bahasa c++\tubes_std\liga-bola-std\main.cpp
 	<iostream>
 	"parent.h"
 	"relasiList.h"
@@ -14,7 +14,7 @@
 	<iostream>
 	"parentData.h"
 
-1556462469 d:\program\bahasa c++\tubes_std\liga-bola-std\parentdata.h
+1556464428 d:\program\bahasa c++\tubes_std\liga-bola-std\parentdata.h
 	<iostream>
 	<cstdlib>
 
@@ -30,4 +30,7 @@
 1556458016 d:\program\bahasa c++\tubes_std\liga-bola-std\childdata.h
 	<iostream>
 	<cstdlib>
+
+1556464388 source:d:\program\bahasa c++\tubes_std\liga-bola-std\isiparent.cpp
+	"parentData.h"
 
