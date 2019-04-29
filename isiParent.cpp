@@ -27,3 +27,9 @@ void lihatClub(club c)
     cout<<"  Nama Club  : " <<c.nama_club<<endl;
     cout<<"  Point Skor    : " <<c.skor_club<<endl;
 }
+
+void edit_data_club(club &c){
+    cout<<"  Nama Club     : ";
+    cin.ignore();
+    getline(cin, c.nama_club);
+}

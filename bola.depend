@@ -16,7 +16,7 @@
 	<iostream>
 	"parentData.h"
 
-1556512956 d:\program\bahasa c++\tubes_std\liga-bola-std\parentdata.h
+1556530734 d:\program\bahasa c++\tubes_std\liga-bola-std\parentdata.h
 	<iostream>
 	<cstdlib>
 
@@ -33,13 +33,13 @@
 	<iostream>
 	<cstdlib>
 
-1556483009 source:d:\program\bahasa c++\tubes_std\liga-bola-std\isiparent.cpp
+1556530734 source:d:\program\bahasa c++\tubes_std\liga-bola-std\isiparent.cpp
 	"parentData.h"
 
 1556484632 source:d:\program\bahasa c++\tubes_std\liga-bola-std\isichild.cpp
 	"childData.h"
 
-1556529122 source:d:\program\bahasa c++\tubes_std\liga-bola-std\relasi.cpp
+1556529588 source:d:\program\bahasa c++\tubes_std\liga-bola-std\relasi.cpp
 	"relasiList.h"
 	"childData.h"
 	"parentData.h"

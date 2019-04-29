@@ -40,12 +40,12 @@ int main()
         cout << "[2.] Input Pemain" << endl;
         cout << "[3.] List Club" << endl;
         cout << "[4.] List Pemain" << endl;
-        cout << "[5.] Delete Club" << endl;
-        cout << "[6.] Delete Pemain" << endl;
+        cout << "[5.] Delete Club By ID" << endl;
+        cout << "[6.] Delete Pemain By ID" << endl;
         cout << "[7.] Buat Koneksi Pemain dan Club" << endl;
         cout << "[8.] List Pemain dengan Club" << endl;
-        cout << "[9.] Edit Club" << endl;
-        cout << "[10.] Edit Pemain" << endl;
+        cout << "[9.] Edit Club By ID" << endl;
+        cout << "[10.] Edit Pemain By ID" << endl;
         cout << endl;
         cout << "[0.] Keluar Program" << endl;
 
@@ -203,6 +203,24 @@ int main()
                 cout<<"  ----------  List Pemain dengan Club  ----------"<<endl;
                 printClubdanPemain(listClub, listRelasi);
                 cout<<"  Tekan 'Enter' untuk melanjutkan...";
+                cin.sync();
+                cin.get();
+                system("CLS");
+                break;
+            case 9:
+                cout<<"  Input ID Club  : ";
+                cin>>c.id_club;
+                addP = findElmClub(listClub,c);
+                if(addP == NULL)
+                {
+                    cout<<"  ID tidak ditemukan! Tekan 'Enter' untuk kembali ke menu utama...";
+                }
+                else
+                {
+                    c = info(addP);
+                    edit_data_club(info(addP));
+                    cout<<"  Club berhasil diganti menjadi '"<<info(addP).nama_club<<"' ! Tekan 'Enter' untuk kembali ke menu utama...";
+                }
                 cin.sync();
                 cin.get();
                 system("CLS");
