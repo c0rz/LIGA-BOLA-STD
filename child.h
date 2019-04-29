@@ -12,6 +12,13 @@ using namespace std;
 
 typedef struct elmlistChild *addressChild;
 
+    /*
+        Dibuat Oleh : Cornelius Stephanus Alfredo ( 1301180287 )
+        Kelas : IF - 42 - 04
+        Judul Program : LIGA BOLA TELKOM
+        Mata Kuliah : Struktur Data
+    */
+
 struct elmlistChild{
     pemain info;
     addressChild next;
@@ -27,5 +34,10 @@ void insertFirstPemain(ListChild &L, addressChild P);
 void insertLastPemain(ListChild &L, addressChild P);
 void insertAfterPemain(ListChild &L, addressChild Prec, addressChild P);
 void printInfoPemain(ListChild L);
+void deleteFirstPemain(ListChild &L, addressChild &P);
+void deleteLastPemain(ListChild &L, addressChild &P);
+void deleteAfterPemain(ListChild &L, addressChild Prec, addressChild &P);
+void deleteByIDPemain(ListChild &L, addressChild &P);
+addressChild findElmPemain(ListChild L, pemain x);
 
 #endif // CHILD_H_INCLUDED

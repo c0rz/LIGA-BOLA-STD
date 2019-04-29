@@ -6,6 +6,13 @@
 
 using namespace std;
 
+    /*
+        Dibuat Oleh : Cornelius Stephanus Alfredo ( 1301180287 )
+        Kelas : IF - 42 - 04
+        Judul Program : LIGA BOLA TELKOM
+        Mata Kuliah : Struktur Data
+    */
+
 struct pemain{
     int id_pemain;
     string nama_pemain;
