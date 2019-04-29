@@ -2,6 +2,8 @@
 #define PARENT_H_INCLUDED
 
 #include <iostream>
+#include <ctime>
+#include <cstdlib>
 #include "parentData.h"
 
 #define first(L) L.first
@@ -41,5 +43,6 @@ void deleteFirstClub(ListParent &L, addressParent &P);
 void deleteAfterClub(ListParent &L, addressParent Prec, addressParent &P);
 void deleteByIDClub(ListParent &L, addressParent &P);
 addressParent findElmClub(ListParent L, club x);
-
+void skor(ListParent &L, club &x, club &y);
+int pointByScore(ListParent &L, club &x, club &y);
 #endif // PARENT_H_INCLUDED

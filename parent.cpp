@@ -177,3 +177,22 @@ addressParent findElmClub(ListParent L, club x){
     }
     return NULL;
 }
+void skor(ListParent &L, club &x, club &y){
+    addressParent P = findElmClub(L, x);
+    addressParent Q = findElmClub(L, y);
+    if(P != NULL && Q != NULL){
+        srand(time(0));
+        int i = rand()%6;
+        x.skor_club = i;
+        int j = rand()%7;
+        y.skor_club = j;
+        lihatClub(x);
+        lihatClub(y);
+        cout<<"Skor akhir : "<<x.skor_club<<" - "<<y.skor_club;
+        //cout<<"Skor Akhir Pertandingan Antara ";cout<<y.skor_club<<" VS ";cout<<b<<" : "<<x.skor_club<<" - "<<y.skor_club; cout<<"gabisa pakek ginian cukk";
+
+    }
+}
+int pointByScore(ListParent &L, club &x, club &y){
+    cout<<"lagi otw dipikirin cukk";
+}
