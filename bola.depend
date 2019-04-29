@@ -44,3 +44,45 @@
 	"childData.h"
 	"parentData.h"
 
+1556563888 source:e:\kuliah\semester 2\strukdat\liga-bola-std\child.cpp
+	"child.h"
+	"childData.h"
+
+1556563888 e:\kuliah\semester 2\strukdat\liga-bola-std\child.h
+	<iostream>
+	"childData.h"
+
+1556563888 e:\kuliah\semester 2\strukdat\liga-bola-std\childdata.h
+	<iostream>
+	<cstdlib>
+
+1556563888 source:e:\kuliah\semester 2\strukdat\liga-bola-std\isichild.cpp
+	"childData.h"
+
+1556563888 source:e:\kuliah\semester 2\strukdat\liga-bola-std\isiparent.cpp
+	"parentData.h"
+
+1556563888 e:\kuliah\semester 2\strukdat\liga-bola-std\parentdata.h
+	<iostream>
+	<cstdlib>
+
+1556564077 source:e:\kuliah\semester 2\strukdat\liga-bola-std\parent.cpp
+	"parent.h"
+	"parentData.h"
+
+1556564478 e:\kuliah\semester 2\strukdat\liga-bola-std\parent.h
+	<iostream>
+	<ctime>
+	<cstdlib>
+	"parentData.h"
+
+1556564478 source:e:\kuliah\semester 2\strukdat\liga-bola-std\main.cpp
+	<iostream>
+	"parent.h"
+	"relasiList.h"
+
+1556563888 e:\kuliah\semester 2\strukdat\liga-bola-std\relasilist.h
+	<iostream>
+	"child.h"
+	"parent.h"
+

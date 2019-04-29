@@ -17,6 +17,7 @@ int main()
     ListRelation listRelasi;
 
     club c;
+    club x,y; /*untuk Skor*/
     pemain p;
 
     addressParent addP; // ini buat Club
@@ -27,7 +28,7 @@ int main()
 
     createListClub(listClub);
     createListPemain(listPemain);
-    createListRelation(listRelasi);
+//    createListRelation(listRelasi);
 
     while(true)
     {
@@ -44,7 +45,7 @@ int main()
         cout << "[6.] Delete Pemain" << endl;
         cout << "[7.] Buat Koneksi Pemain dan Club" << endl;
         cout << "[8.] List Pemain dengan Club" << endl;
-        cout << "[9.] Edit Club" << endl;
+        cout << "[9.] Mainkan Pertandingan" << endl;
         cout << "[10.] Edit Pemain" << endl;
         cout << endl;
         cout << "[0.] Keluar Program" << endl;
@@ -152,7 +153,7 @@ int main()
                 cin.get();
                 system("CLS");
                 break;
-            case 7:
+  /*          case 7:
                 cout<<"  Masukan ID Club  : ";
                 cin>>c.id_club;
                 cout<<"  Input ID Pemain : ";
@@ -197,12 +198,22 @@ int main()
                     cin.get();
                     system("CLS");
                 }
-                break;
-            case 8:
+                break;*/
+            /*case 8:
                 cout<<endl;
                 cout<<"  ----------  List Pemain dengan Club  ----------"<<endl;
                 printClubdanPemain(listClub, listRelasi);
                 cout<<"  Tekan 'Enter' untuk melanjutkan...";
+                cin.sync();
+                cin.get();
+                system("CLS");
+                break;*/
+            case 9:
+                cout<<"Input ID Club Pertama : ";
+                cin>>x.id_club;
+                cout<<"Input ID Club Kedua : ";
+                cin>>y.id_club;
+                skor(listClub, x, y);
                 cin.sync();
                 cin.get();
                 system("CLS");
