@@ -12,5 +12,6 @@ using namespace std;
 
 void skor(ListParent &L, club &x, club &y, int &day);
 void listTinggiSkor(ListParent L);
+int hitungClub(ListParent &L);
 
 #endif // CASEFUNGSILITAS_H_INCLUDED

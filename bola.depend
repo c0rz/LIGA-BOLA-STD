@@ -55,3 +55,59 @@
 	"child.h"
 	"relasiList.h"
 
+1556636522 source:e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\child.cpp
+	"child.h"
+	"childData.h"
+
+1556636522 e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\child.h
+	<iostream>
+	"childData.h"
+
+1556636522 e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\childdata.h
+	<iostream>
+	<cstdlib>
+
+1556636522 source:e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\isichild.cpp
+	"childData.h"
+
+1556636522 source:e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\isiparent.cpp
+	"parentData.h"
+
+1556636522 e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\parentdata.h
+	<iostream>
+	<cstdlib>
+
+1556636522 source:e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\main.cpp
+	<iostream>
+	"parent.h"
+	"relasiList.h"
+	"caseFungsilitas.h"
+
+1556636522 e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\parent.h
+	<iostream>
+	"parentData.h"
+
+1556636522 e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\relasilist.h
+	<iostream>
+	"child.h"
+	"parent.h"
+
+1556636625 e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\casefungsilitas.h
+	<cstdlib>
+	<ctime>
+	"parent.h"
+	"child.h"
+	"relasiList.h"
+
+1556636522 source:e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\parent.cpp
+	"parent.h"
+	"parentData.h"
+
+1556636522 source:e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\relasi.cpp
+	"relasiList.h"
+	"childData.h"
+	"parentData.h"
+
+1556636625 source:e:\kuliah\semester 2\strukdat\new folder (2)\liga-bola-std\casefungsilitas.cpp
+	"caseFungsilitas.h"
+
