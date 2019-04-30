@@ -89,11 +89,14 @@ void printInfoPemain(ListChild L){
     */
     if(first(L) != NULL){
         addressChild P = first(L);
+        cout << "  ---------------  LIST PEMAIN  ---------------" << endl;
         do{
             lihatPemain(info(P));
             cout<<endl;
             P = next(P);
         }while(P != first(L));
+    } else {
+        cout << "Silahkan inputkan pemain anda terlebih dahulu, karena data kosong..." << endl;
     }
 }
 

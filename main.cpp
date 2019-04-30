@@ -204,28 +204,28 @@ int main()
                     system("CLS");
                 }
                 break;
-                case 8:
-                    cout<<"  Input ID Club  : ";
-                    cin>>c.id_club;
-                    cout<<"  Input ID Pemain : ";
-                    cin>>p.id_pemain;
-                    addP = findElmClub(listClub, c);
-                    addC = findElmPemain(listPemain, p);
-                        addR = findRelation(listRelasi,addP,addC);
-                        deleteRelation(listRelasi,addR);
-                    /*else if((addC == NULL) && (addP == NULL)){
-                        cout<<"  ID Club dan ID Pemain tidak ditemukan!";
-                    }
-                    else if(addC == NULL){
-                        cout<<"  ID Pemain tidak ditemukan!";
-                    }
-                    else if(addP == NULL){
-                        cout<<"  ID Club tidak ditemukan!";
-                    }*/
-                    cout<<" Tekan 'Enter' untuk kembali ke menu utama...";
-                    cin.sync();
-                    cin.get();
-                    system("CLS");
+            case 8:
+                cout<<"  Input ID Club  : ";
+                cin>>c.id_club;
+                cout<<"  Input ID Pemain : ";
+                cin>>p.id_pemain;
+                addP = findElmClub(listClub, c);
+                addC = findElmPemain(listPemain, p);
+                addR = findRelation(listRelasi,addP,addC);
+                deleteRelation(listRelasi,addR);
+                /*else if((addC == NULL) && (addP == NULL)){
+                    cout<<"  ID Club dan ID Pemain tidak ditemukan!";
+                }
+                else if(addC == NULL){
+                    cout<<"  ID Pemain tidak ditemukan!";
+                }
+                else if(addP == NULL){
+                    cout<<"  ID Club tidak ditemukan!";
+                }*/
+                cout<<" Tekan 'Enter' untuk kembali ke menu utama...";
+                cin.sync();
+                cin.get();
+                system("CLS");
                 break;
             case 9:
                 cout<<endl;
@@ -278,14 +278,14 @@ int main()
                 cout<<"Input ID Club Kedua : ";
                 cin>>tim2.id_club;
                 skor(listClub, tim1, tim2, day);
-                cout<<"Pilihan tidak tersedia. Tekan 'Enter' untuk kembali ke menu utama...";
+                cout<<"Tekan 'Enter' untuk kembali ke menu utama......";
                 cin.sync();
                 cin.get();
                 system("CLS");
                 break;
             case 13:
                 listTinggiSkor(listClub);
-                cout<<"Pilihan tidak tersedia. Tekan 'Enter' untuk kembali ke menu utama...";
+                cout<<"Tekan 'Enter' untuk kembali ke menu utama......";
                 cin.sync();
                 cin.get();
                 system("CLS");

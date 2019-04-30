@@ -70,8 +70,8 @@ void printInfoClub(ListParent L){
     */
     if((first(L) != NULL) && (last(L) != NULL)){
         addressParent P = first(L);
+        cout << "  ---------------  LIST CLUB  ---------------" << endl;
         while(P != NULL){
-            cout << "  ---------------  List Club  ---------------" << endl;
             lihatClub(info(P));
             cout<<endl;
             P = next(P);
