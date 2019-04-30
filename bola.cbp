@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="caseFungsilitas.cpp" />
+		<Unit filename="caseFungsilitas.h" />
 		<Unit filename="child.cpp" />
 		<Unit filename="child.h" />
 		<Unit filename="childData.h" />
