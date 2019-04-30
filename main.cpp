@@ -1,6 +1,7 @@
 #include <iostream>
 #include "parent.h"
 #include "relasiList.h"
+#include "caseFungsilitas.h"
 
 using namespace std;
 
@@ -24,6 +25,7 @@ int main()
     addressRelation addR; // Relasi
 
     int menu;
+    int day = 1;
 
     createListClub(listClub);
     createListPemain(listPemain);
@@ -47,6 +49,7 @@ int main()
         cout << "[9.] List Pemain dengan Club" << endl;
         cout << "[10.] Edit Club By ID" << endl;
         cout << "[11.] Edit Pemain By ID" << endl;
+        cout << "[12.] Mulai Permainan ('"<< day <<" Season')" << endl;
         cout << endl;
         cout << "[0.] Keluar Program" << endl;
 
@@ -263,6 +266,15 @@ int main()
                     edit_data_pemain(info(addC));
                     cout<<"  Pemain berhasil diganti menjadi '"<<info(addC).nama_pemain<<"' ! Tekan 'Enter' untuk kembali ke menu utama...";
                 }
+                cin.sync();
+                cin.get();
+                system("CLS");
+                break;
+            case 12:
+                day++;
+                runPermainanBola(listClub);
+                cout << endl;
+                cout<<"Tekan 'Enter' untuk kembali ke menu utama...";
                 cin.sync();
                 cin.get();
                 system("CLS");

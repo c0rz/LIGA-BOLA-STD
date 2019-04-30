@@ -3,10 +3,11 @@
 	"child.h"
 	"childData.h"
 
-1556598966 source:d:\program\bahasa c++\tubes_std\liga-bola-std\main.cpp
+1556605816 source:d:\program\bahasa c++\tubes_std\liga-bola-std\main.cpp
 	<iostream>
 	"parent.h"
 	"relasiList.h"
+	"caseFungsilitas.h"
 
 1556528465 source:d:\program\bahasa c++\tubes_std\liga-bola-std\parent.cpp
 	"parent.h"
@@ -16,7 +17,7 @@
 	<iostream>
 	"parentData.h"
 
-1556530734 d:\program\bahasa c++\tubes_std\liga-bola-std\parentdata.h
+1556605574 d:\program\bahasa c++\tubes_std\liga-bola-std\parentdata.h
 	<iostream>
 	<cstdlib>
 
@@ -33,7 +34,7 @@
 	<iostream>
 	<cstdlib>
 
-1556599368 source:d:\program\bahasa c++\tubes_std\liga-bola-std\isiparent.cpp
+1556605588 source:d:\program\bahasa c++\tubes_std\liga-bola-std\isiparent.cpp
 	"parentData.h"
 
 1556599266 source:d:\program\bahasa c++\tubes_std\liga-bola-std\isichild.cpp
@@ -43,4 +44,14 @@
 	"relasiList.h"
 	"childData.h"
 	"parentData.h"
+
+1556605808 source:d:\program\bahasa c++\tubes_std\liga-bola-std\casefungsilitas.cpp
+	"caseFungsilitas.h"
+
+1556605858 d:\program\bahasa c++\tubes_std\liga-bola-std\casefungsilitas.h
+	<cstdlib>
+	<ctime>
+	"parent.h"
+	"child.h"
+	"relasiList.h"
 
