@@ -10,6 +10,6 @@
 
 using namespace std;
 
-void runPermainanBola(ListParent L);
+void skor(ListParent &L, club &x, club &y, int &day);
 
 #endif // CASEFUNGSILITAS_H_INCLUDED

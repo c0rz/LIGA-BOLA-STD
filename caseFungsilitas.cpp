@@ -1,18 +1,19 @@
 #include "caseFungsilitas.h"
 
-void runPermainanBola(ListParent L)
-{
-    if((first(L) != NULL) && (last(L) != NULL)){
-        addressParent P = first(L);
-        srand(time(0));  // Initialize random number generator.
-        while(P != NULL){
-            int r = (rand() % 5) + 1;
-            info(P).skor_club = info(P).skor_club + r;
-            P = next(P);
-        }
-    }
-    else
-    {
-        cout << "Silahkan inputkan club anda terlebih dahulu, karena data kosong..." << endl;
+void skor(ListParent &L, club &x, club &y, int &day){
+    addressParent P = findElmClub(L, x);
+    addressParent Q = findElmClub(L, y);
+    if(P != NULL && Q != NULL){
+        srand(time(0));
+        int i = rand()%6;
+        info(P).skor_club = info(P).skor_club + i;
+        int j = rand()%7;
+        info(Q).skor_club = info(Q).skor_club + j;
+        day++;
+        cout << "Hasil Akhir Permainan : " << endl;
+        cout << "Tim '"<<info(P).nama_club<<"' : " << i << endl;
+        cout << "Tim '"<<info(Q).nama_club<<"' : " << j << endl;
+    } else {
+        cout << "ID Team tidak ditemukan silahkan masukkan ID ulang..." << endl;
     }
 }

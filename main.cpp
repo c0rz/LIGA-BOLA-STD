@@ -18,6 +18,7 @@ int main()
     ListRelation listRelasi;
 
     club c;
+    club tim1, tim2;
     pemain p;
 
     addressParent addP; // ini buat Club
@@ -50,6 +51,7 @@ int main()
         cout << "[10.] Edit Club By ID" << endl;
         cout << "[11.] Edit Pemain By ID" << endl;
         cout << "[12.] Mulai Permainan ('"<< day <<" Season')" << endl;
+        cout << "[13.] Mulai Permainan ('"<< day <<" Season')" << endl;
         cout << endl;
         cout << "[0.] Keluar Program" << endl;
 
@@ -271,10 +273,12 @@ int main()
                 system("CLS");
                 break;
             case 12:
-                day++;
-                runPermainanBola(listClub);
-                cout << endl;
-                cout<<"Tekan 'Enter' untuk kembali ke menu utama...";
+                cout<<"Input ID Club Pertama : ";
+                cin>>tim1.id_club;
+                cout<<"Input ID Club Kedua : ";
+                cin>>tim2.id_club;
+                skor(listClub, tim1, tim2, day);
+                cout<<"Pilihan tidak tersedia. Tekan 'Enter' untuk kembali ke menu utama...";
                 cin.sync();
                 cin.get();
                 system("CLS");

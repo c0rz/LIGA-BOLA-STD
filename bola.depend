@@ -3,7 +3,7 @@
 	"child.h"
 	"childData.h"
 
-1556605816 source:d:\program\bahasa c++\tubes_std\liga-bola-std\main.cpp
+1556609080 source:d:\program\bahasa c++\tubes_std\liga-bola-std\main.cpp
 	<iostream>
 	"parent.h"
 	"relasiList.h"
@@ -45,10 +45,10 @@
 	"childData.h"
 	"parentData.h"
 
-1556605808 source:d:\program\bahasa c++\tubes_std\liga-bola-std\casefungsilitas.cpp
+1556608764 source:d:\program\bahasa c++\tubes_std\liga-bola-std\casefungsilitas.cpp
 	"caseFungsilitas.h"
 
-1556605858 d:\program\bahasa c++\tubes_std\liga-bola-std\casefungsilitas.h
+1556607948 d:\program\bahasa c++\tubes_std\liga-bola-std\casefungsilitas.h
 	<cstdlib>
 	<ctime>
 	"parent.h"
