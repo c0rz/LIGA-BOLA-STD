@@ -51,7 +51,7 @@ int main()
         cout << "[10.] Edit Club By ID" << endl;
         cout << "[11.] Edit Pemain By ID" << endl;
         cout << "[12.] Mulai Permainan ('"<< day <<" Season')" << endl;
-        cout << "[13.] Mulai Permainan ('"<< day <<" Season')" << endl;
+        cout << "[13.] List Skor Tertinggi" << endl;
         cout << endl;
         cout << "[0.] Keluar Program" << endl;
 
@@ -278,6 +278,13 @@ int main()
                 cout<<"Input ID Club Kedua : ";
                 cin>>tim2.id_club;
                 skor(listClub, tim1, tim2, day);
+                cout<<"Pilihan tidak tersedia. Tekan 'Enter' untuk kembali ke menu utama...";
+                cin.sync();
+                cin.get();
+                system("CLS");
+                break;
+            case 13:
+                listTinggiSkor(listClub);
                 cout<<"Pilihan tidak tersedia. Tekan 'Enter' untuk kembali ke menu utama...";
                 cin.sync();
                 cin.get();
