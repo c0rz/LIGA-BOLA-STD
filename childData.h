@@ -16,10 +16,10 @@ using namespace std;
 struct pemain{
     int id_pemain;
     string nama_pemain;
-    int total_gol;
 };
 
 pemain create_data_pemain();
 void lihatPemain(pemain p);
+void edit_data_pemain(pemain &p);
 
 #endif // CHILDDATA_H_INCLUDED

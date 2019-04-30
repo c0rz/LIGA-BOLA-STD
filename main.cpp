@@ -42,20 +42,21 @@ int main()
         cout << "[4.] List Pemain" << endl;
         cout << "[5.] Delete Club By ID" << endl;
         cout << "[6.] Delete Pemain By ID" << endl;
-        cout << "[7.] Buat Koneksi Pemain dan Club" << endl;
-        cout << "[8.] List Pemain dengan Club" << endl;
-        cout << "[9.] Edit Club By ID" << endl;
-        cout << "[10.] Edit Pemain By ID" << endl;
+        cout << "[7.] Buat Koneksi Pemain dengan Club" << endl;
+        cout << "[8.] Putuskan/Hapus Koneksi Pemain dengan Club" << endl;
+        cout << "[9.] List Pemain dengan Club" << endl;
+        cout << "[10.] Edit Club By ID" << endl;
+        cout << "[11.] Edit Pemain By ID" << endl;
         cout << endl;
         cout << "[0.] Keluar Program" << endl;
 
         cout<<endl;
-        cout<<"Pilihan (0-5): ";
+        cout<<"Pilihan (integer): ";
         cin>>menu;
         if(cin.fail())
         {
             cin.clear();
-            cout<<"Pilihan yang anda inputkan bukan integer. Tekan 'Enter' untuk melanjutkan...";
+            cout<<"Pilihan yang anda inputkan bukan integer. Tekan 'Enter' untuk kembali ke menu utama...";
             cin.sync();
             cin.get();
             system("CLS");
@@ -74,11 +75,11 @@ int main()
                 {
                     addP = allocateClub(c);
                     insertLastClub(listClub, addP);
-                    cout<<"  Club berhasil diinput! Tekan 'Enter' untuk melanjutkan...";
+                    cout<<"  Club berhasil diinput! Tekan 'Enter' untuk kembali ke menu utama...";
                 }
                 else if(findElmClub(listClub,c) != NULL)
                 {
-                    cout<<"  ID duplikat! Tekan 'Enter' untuk melanjutkan...";
+                    cout<<"  ID duplikat! Tekan 'Enter' untuk kembali ke menu utama...";
                 }
                 cin.sync();
                 cin.get();
@@ -90,11 +91,11 @@ int main()
                 {
                     addC = allocatePemain(p);
                     insertLastPemain(listPemain, addC);
-                    cout<<"  Pemain berhasil diinput! Tekan 'Enter' untuk melanjutkan...";
+                    cout<<"  Pemain berhasil diinput! Tekan 'Enter' untuk kembali ke menu utama...";
                 }
                 else if(findElmPemain(listPemain,p) != NULL)
                 {
-                    cout<<"  ID duplikat! Tekan 'Enter' untuk melanjutkan...";
+                    cout<<"  ID duplikat! Tekan 'Enter' untuk kembali ke menu utama...";
                 }
                 cin.sync();
                 cin.get();
@@ -122,12 +123,12 @@ int main()
                 addP = findElmClub(listClub,c);
                 if(addP == NULL)
                 {
-                    cout<<"  ID Club tidak ditemukan! Tekan 'Enter' untuk melanjutkan...";
+                    cout<<"  ID Club tidak ditemukan! Tekan 'Enter' untuk kembali ke menu utama...";
                 }
                 else
                 {
                     deleteByIDClub(listClub,addP);
-                    cout<<"  Tim Club '"<<info(addP).nama_club<<"' berhasil dihapus! Tekan 'Enter' untuk melanjutkan...";
+                    cout<<"  Tim Club '"<<info(addP).nama_club<<"' berhasil dihapus! Tekan 'Enter' untuk kembali ke menu utama...";
                     delete addP;
                 }
                 cin.sync();
@@ -140,12 +141,12 @@ int main()
                 addC = findElmPemain(listPemain, p);
                 if(addC == NULL)
                 {
-                    cout<<"  ID Pemain tidak ditemukan! Tekan 'Enter' untuk melanjutkan...";
+                    cout<<"  ID Pemain tidak ditemukan! Tekan 'Enter' untuk kembali ke menu utama...";
                 }
                 else
                 {
                     deleteByIDPemain(listPemain,addC);
-                    cout<<"  Pemain bernama '"<<info(addC).nama_pemain<<"' berhasil dihapus! Tekan 'Enter' untuk melanjutkan...";
+                    cout<<"  Pemain bernama '"<<info(addC).nama_pemain<<"' berhasil dihapus! Tekan 'Enter' untuk kembali ke menu utama...";
                     delete addC;
                 }
                 cin.sync();
@@ -198,16 +199,39 @@ int main()
                     system("CLS");
                 }
                 break;
-            case 8:
+                case 8:
+                    cout<<"  Input ID Club  : ";
+                    cin>>c.id_club;
+                    cout<<"  Input ID Pemain : ";
+                    cin>>p.id_pemain;
+                    addP = findElmClub(listClub, c);
+                    addC = findElmPemain(listPemain, p);
+                        addR = findRelation(listRelasi,addP,addC);
+                        deleteRelation(listRelasi,addR);
+                    /*else if((addC == NULL) && (addP == NULL)){
+                        cout<<"  ID Club dan ID Pemain tidak ditemukan!";
+                    }
+                    else if(addC == NULL){
+                        cout<<"  ID Pemain tidak ditemukan!";
+                    }
+                    else if(addP == NULL){
+                        cout<<"  ID Club tidak ditemukan!";
+                    }*/
+                    cout<<" Tekan 'Enter' untuk kembali ke menu utama...";
+                    cin.sync();
+                    cin.get();
+                    system("CLS");
+                break;
+            case 9:
                 cout<<endl;
                 cout<<"  ----------  List Pemain dengan Club  ----------"<<endl;
                 printClubdanPemain(listClub, listRelasi);
-                cout<<"  Tekan 'Enter' untuk melanjutkan...";
+                cout<<"  Tekan 'Enter' untuk kembali ke menu utama...";
                 cin.sync();
                 cin.get();
                 system("CLS");
                 break;
-            case 9:
+            case 10:
                 cout<<"  Input ID Club  : ";
                 cin>>c.id_club;
                 addP = findElmClub(listClub,c);
@@ -225,8 +249,26 @@ int main()
                 cin.get();
                 system("CLS");
                 break;
+            case 11:
+                cout<<"  Input ID Pemain  : ";
+                cin>>p.id_pemain;
+                addC = findElmPemain(listPemain,p);
+                if(addC == NULL)
+                {
+                    cout<<"  ID Pemain tidak ditemukan! Tekan 'Enter' untuk kembali ke menu utama...";
+                }
+                else
+                {
+                    p = info(addC);
+                    edit_data_pemain(info(addC));
+                    cout<<"  Pemain berhasil diganti menjadi '"<<info(addC).nama_pemain<<"' ! Tekan 'Enter' untuk kembali ke menu utama...";
+                }
+                cin.sync();
+                cin.get();
+                system("CLS");
+                break;
             default:
-                cout<<"Pilihan tidak tersedia. Tekan 'Enter' untuk melanjutkan...";
+                cout<<"Pilihan tidak tersedia. Tekan 'Enter' untuk kembali ke menu utama...";
                 cin.sync();
                 cin.get();
                 system("CLS");

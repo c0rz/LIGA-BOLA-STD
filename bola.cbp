@@ -41,6 +41,7 @@
 		<Unit filename="parent.cpp" />
 		<Unit filename="parent.h" />
 		<Unit filename="parentData.h" />
+		<Unit filename="relasi.cpp" />
 		<Unit filename="relasiList.h" />
 		<Extensions>
 			<code_completion />
